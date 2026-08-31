@@ -35,3 +35,23 @@ Under Workbench › Startup Editor, you can choose something like:
 Blank Slate:
 > Window: Restore Windows - `none` <br>
 > Workbench: Startup Editor - `welcomePage`
+
+---
+
+#### **VS Code’s Git decorations**
+
+![colours and file letters changing](./assets/images/vscode-setup/file-symbols-colour-change.png)
+
+```
+U = Untracked
+    New file Git is not tracking yet
+
+M = Modified
+    Tracked file has changed since last commit
+
+A = Added
+    New file has been staged
+
+D = Deleted
+    Tracked file has been deleted
+```
