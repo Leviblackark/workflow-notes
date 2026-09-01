@@ -10,4 +10,11 @@ Things don't have to be complicated and insufferable, just sweet a tasty with id
 - Local guide to using git on the computer - local-git.md
 - Guide for interacting with the github cloud - github-workflow
 
+---
 
+## License
+
+This repository is licensed under the GNU General Public License v3.0. <br>
+You are free to use, modify, and redistribute the material in accordance with the terms of the license.
+
+See the [LICENSE](LICENSE.md) file for full details.
