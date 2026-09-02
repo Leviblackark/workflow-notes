@@ -855,3 +855,237 @@ translate it mentally to:
 That's all it means.
 
 It has nothing to do with Git failing to track the file, and it doesn't mean your Python/Jupyter/Markdown file is corrupted.
+
+---
+
+#### Second Problem encountered  
+
+After setting up the repo `git init`. I created these files before any commit:
+
+1. .venv
+2. .gitignore
+3. .gitattributes
+4. requirements.txt 
+5. Readme.md
+
+then I'd did: 
+```bash
+git status
+git add .
+```
+
+then this:
+
+```text
+warning: in the working copy of 'README.md', CRLF will be replaced by LF the next time Git touches it
+```
+
+Dispite the `.gitattributes` having:
+
+```text
+* text=auto
+
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.ipynb text eol=lf
+
+.gitignore text eol=lf
+.gitattributes text eol=lf
+```
+#### **When doing the first commit: WARNING**
+![warning message displayed with gitattributes in place](./assets/images/warning-LF-replaced-by-CRLF/warning-displayed-with-gitattributes.jpg)
+
+#### **Warning when modifying the same file**
+
+![warning appear again after editing md file](./assets/images/warning-LF-replaced-by-CRLF/warning-after-editing-md-file.jpg)
+
+---
+
+Run this now:
+```bash
+git ls-files --eol README.md
+```
+
+Git might return something similar to:
+
+```text
+i/lf    w/crlf    attr/text eol=lf    README.md
+```
+
+That would mean:
+```text
+i/lf
+│
+└── index (what Git will commit) = LF ✅
+
+w/crlf
+│
+└── working copy on your Windows computer = CRLF
+
+attr/text eol=lf
+│
+└── .gitattributes says it should use LF
+```
+
+![](./assets/images/warning-LF-replaced-by-CRLF/test-1.png)
+If you get:
+```text
+i/lf    w/lf    attr/text eol=lf
+```
+even better:
+```text
+Git index     = LF
+Working file  = LF
+Rule          = LF
+```
+
+Everything is completely aligned.
+
+```text
+.gitattributes exists BEFORE first git add
+               ↓
+          git add .
+               ↓
+        No renormalize needed
+```
+---
+
+That output tells us exactly what is happening:
+```text
+i/lf    w/crlf    attr/text eol=lf    README.md
+```
+It means:
+
+* `i/lf` → Git’s index/staged version is already LF ✅
+* `w/crlf` → the actual `README.md` on your Windows computer is currently CRLF
+* `attr/text eol=lf` → your `.gitattributes` explicitly says this file should use LF
+
+So when you run:
+```text
+git add .
+```
+
+Git sees:
+
+> “The working copy is CRLF, but the project rules say LF. I’ll convert it to LF when I stage it.”
+
+Hence:
+```text
+warning: CRLF will be replaced by LF the next time Git touches it
+```
+
+Nothing is broken.
+
+#### **Option 1 - fix**
+
+In VS Code, open README.md.
+
+At the bottom-right of VS Code, you should see:
+```text
+CRLF
+```
+Click it, choose:
+```text
+LF
+```
+and save the file.
+
+Then run:
+```text
+git ls-files --eol README.md
+```
+
+You ideally want:
+```text
+i/lf    w/lf    attr/text eol=lf    README.md
+````
+
+Now all three agree:
+```text
+Git index       LF
+Working file    LF
+.gitattributes  LF
+```
+
+and you shouldn't get that warning for the README anymore.'
+
+> [!TIP]
+> Do this for each file and then do option 2 so when the those files are changed, when you save them they don't just switch back. 
+
+---
+
+#### **Option 2**
+
+I'd make VS Code create files as LF by default too.
+
+Open VS Code Settings and search:
+```text
+EOL
+```
+
+Find:
+
+**Files: Eol**
+
+and set it to:
+```text
+\n
+```
+That's LF.
+
+![](./assets/images/warning-LF-replaced-by-CRLF/changing-default-line-spacings-in-settings.png)
+Then your workflow becomes:
+```text
+VS Code creates LF
+        ↓
+.gitattributes expects LF
+        ↓
+Git stores LF
+        ↓
+No disagreement ✅
+```
+
+---
+
+touch README.md itself does not create CRLF line endings. It creates an empty file:
+```text
+touch README.md
+```
+
+An empty file has no line endings yet.
+
+The CRLF would have been introduced when you later opened the file in VS Code and saved text into it. If VS Code’s default EOL setting was CRLF, then the first saved lines in that file became CRLF.
+
+So your sequence was probably:
+```text
+touch README.md
+      ↓
+empty file — no LF or CRLF yet
+
+open in VS Code
+      ↓
+type README content
+
+VS Code saves using CRLF
+      ↓
+README.md = CRLF
+
+.gittributes says *.md = LF
+      ↓
+git add .
+      ↓
+Git warns that CRLF will be converted to LF
+```
+
+---
+
+#### Useful tests
+
+```bash
+git ls-files --eol README.md
+git check-attr text eol -- README.md
+git config --show-origin --get core.autocrlf
+git config --show-origin --get core.safecrlf
+```
