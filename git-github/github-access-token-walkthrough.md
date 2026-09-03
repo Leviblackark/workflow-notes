@@ -113,7 +113,7 @@ Profile picture
 Settings
 ```
 
-![navigate to settings on the github page](./assets/images/github-access-token-walkthough/access-token-step-1.png)
+![navigate to settings on the github page](../assets/images/github-access-token-walkthrough/access-token-step-1.png)
 
 --- 
 
@@ -124,7 +124,7 @@ Scroll down the left sidebar and select:
 Developer settings
 ```
 
-![navigate to bottom left icon](./assets/images/github-access-token-walkthough/access-token-step-2.png)
+![navigate to bottom left icon](../assets/images/github-access-token-walkthrough/access-token-step-2.png)
 
 ---
 
@@ -141,7 +141,7 @@ Then:
 
 Generate new token
 #### Step 3 - Tokens (classic)
-![click tokens (classic)](./assets/images/github-access-token-walkthough/access-token-step-3.png)
+![click tokens (classic)](../assets/images/github-access-token-walkthrough/access-token-step-3.png)
 
 ---
 
@@ -160,7 +160,7 @@ Finance project Git access
 
 Don't put the actual token value in the name.
 
-![](./assets/images/github-access-token-walkthough/access-token-step-4.png)
+![](../assets/images/github-access-token-walkthrough/access-token-step-4.png)
 
 
 ---
@@ -189,7 +189,7 @@ Can no longer authenticate
 ```
 A new token can then be created when required.
 
-![chooosing a experiation](./assets/images/github-access-token-walkthough/access-token-step-5.png)
+![chooosing a experiation](../assets/images/github-access-token-walkthrough/access-token-step-5.png)
 
 ---
 

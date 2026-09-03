@@ -1,6 +1,6 @@
 ### I ran in to a issue when running `git add .`
 
-![warning after git add . is used](./assets/images/warning-LF-replaced-by-CRLF/warning-replace-LF-by-CRLF.jpg)
+![warning after git add . is used](../assets/images/lf-crlf-warning/warning-replace-LF-by-CRLF.jpg)
 
 ```text
 warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
@@ -895,11 +895,11 @@ Dispite the `.gitattributes` having:
 .gitattributes text eol=lf
 ```
 #### **When doing the first commit: WARNING**
-![warning message displayed with gitattributes in place](./assets/images/warning-LF-replaced-by-CRLF/warning-displayed-with-gitattributes.jpg)
+![warning message displayed with gitattributes in place](../assets/images/lf-crlf-warning/warning-displayed-with-gitattributes.jpg)
 
 #### **Warning when modifying the same file**
 
-![warning appear again after editing md file](./assets/images/warning-LF-replaced-by-CRLF/warning-after-editing-md-file.jpg)
+![warning appear again after editing md file](../assets/images/lf-crlf-warning/warning-after-editing-md-file.jpg)
 
 ---
 
@@ -929,7 +929,7 @@ attr/text eol=lf
 └── .gitattributes says it should use LF
 ```
 
-![](./assets/images/warning-LF-replaced-by-CRLF/test-1.png)
+![](../assets/images/lf-crlf-warning/test-1.png)
 If you get:
 ```text
 i/lf    w/lf    attr/text eol=lf
@@ -1035,7 +1035,7 @@ and set it to:
 ```
 That's LF.
 
-![](./assets/images/warning-LF-replaced-by-CRLF/changing-default-line-spacings-in-settings.png)
+![](../assets/images/lf-crlf-warning/changing-default-line-spacings-in-settings.png)
 Then your workflow becomes:
 ```text
 VS Code creates LF

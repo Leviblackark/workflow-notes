@@ -40,7 +40,7 @@ Blank Slate:
 
 #### **VS Code’s Git decorations**
 
-![colours and file letters changing](./assets/images/vscode-setup/file-symbols-colour-change.png)
+![colours and file letters changing](../assets/images/vscode-setup/file-symbols-colour-change.png)
 
 ```
 U = Untracked

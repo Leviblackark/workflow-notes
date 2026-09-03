@@ -16,7 +16,7 @@ Press (Repeat to bring back normal view):
 **Method 2**<br>
 Have Markdown text and preview side by side:
 
-![vs code display markdown preview side by side](assets/images/markdown-in-vscode/markdown-preview.jpg)
+![vs code display markdown preview side by side](../assets/images/markdown-in-vscode/markdown-preview.jpg)
 
 Do it like this:
 
@@ -34,7 +34,7 @@ You can also do this:
 2. Drag and drop to the right side 
 ```
 
-![right click the file on the rightside to open preview](assets/images/markdown-in-vscode/rightclick-preview.jpg)
+![right click the file on the rightside to open preview](../assets/images/markdown-in-vscode/rightclick-preview.jpg)
 
 #### Resources
 

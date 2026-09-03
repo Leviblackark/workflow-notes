@@ -1,12 +1,12 @@
 #### Fixing OneDrive Documents Folder Redirection on Windows
 
 Git bash messed when Onedrive started backing up:
-![error gitbash not functioning correctly](./assets/images/onedrive-gitconflict/git-bash-documents.png)
+![error gitbash not functioning correctly](../assets/images/onedrive-gitconflict/git-bash-documents.png)
 
 
 At the top the file path has changed after backup compeleted:
 
-![image of my file system onedrive path noticed at the top](./assets/images/onedrive-gitconflict/onedrive-file-path.png)
+![image of my file system onedrive path noticed at the top](../assets/images/onedrive-gitconflict/onedrive-file-path.png)
 
 #### What happened
 
@@ -136,7 +136,7 @@ Then:
 
 2. Settings
 
-![find onedrive settings](./assets/images/onedrive-gitconflict/step-1.png)
+![find onedrive settings](../assets/images/onedrive-gitconflict/step-1.png)
 Then:
 
 3. Sync and backup
@@ -145,7 +145,7 @@ Then:
 
 4. Manage backup
 
-![in sync and backup click manage backup](./assets/images/onedrive-gitconflict/step-2.png)
+![in sync and backup click manage backup](../assets/images/onedrive-gitconflict/step-2.png)
 
 You may see:
 ```text
@@ -153,7 +153,7 @@ Desktop       Backed up
 Documents     Backed up
 Pictures      Backed up
 ```
-![stop documents from backing up](./assets/images/onedrive-gitconflict/step-3.png)
+![stop documents from backing up](../assets/images/onedrive-gitconflict/step-3.png)
 
 ---
 
@@ -181,7 +181,7 @@ if the goal is to restore the normal local Documents folder.
 
 #### Step 5 — If OneDrive says files must be downloaded first
 
-![warning message some files are cloud based](./assets/images/onedrive-gitconflict/warning-message-cloudonly.png)
+![warning message some files are cloud based](../assets/images/onedrive-gitconflict/warning-message-cloudonly.png)
 
 You may receive a message such as:
 ```text
