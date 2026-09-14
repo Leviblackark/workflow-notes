@@ -1,3 +1,5 @@
+> [BACK](../README.md)
+
 ## Markdown In Vscode and Short Cuts
 
 ### Visualising Markdown
@@ -41,3 +43,7 @@ You can also do this:
 Github Web-link for Formatting:
 
 > https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+---
+
+> [BACK](../README.md) 😮 [TOP](#markdown-in-vscode-and-short-cuts)

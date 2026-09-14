@@ -1,3 +1,5 @@
+> [BACK](../README.md)
+
 #### Fixing OneDrive Documents Folder Redirection on Windows
 
 Git bash messed when Onedrive started backing up:
@@ -243,3 +245,5 @@ When OneDrive Documents Backup is stopped and the files are kept on the PC, Wind
 ```text
 C:\Users\<username>\Documents
 ```
+
+> [BACK](../README.md) 😮 [TOP](#fixing-onedrive-documents-folder-redirection-on-windows)

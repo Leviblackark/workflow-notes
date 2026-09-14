@@ -1,4 +1,7 @@
+> [BACK](../README.md)
+
 #### How to create .gitignore in VS Code
+
 Inside the project folder, you can create it in the VS Code Explorer:
 1. Click New File.
 2. Name it exactly:
@@ -190,3 +193,7 @@ Desktop.ini
 *.temp
 *.bak
 ```
+
+---
+
+> [BACK](../README.md) 😮 [TOP](#how-to-create-gitignore-in-vs-code)

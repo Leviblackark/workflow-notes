@@ -1,3 +1,5 @@
+> [BACK](../README.md)
+
 ## Local Git Workflow
 
 #### One-time Git setup
@@ -231,3 +233,6 @@ Shows all the files your note tracking:
 ```bash
 git status --untracked-files=all 
 ```
+
+---
+> [BACK](../README.md) 😮 [TOP](#local-git-workflow)

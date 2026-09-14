@@ -1,3 +1,5 @@
+> [BACK](../README.md)
+
 #### Path rules
 
 ```text
@@ -9,3 +11,5 @@ folder/     → folder inside where I currently am
 
 /folder/    → folder starting from the filesystem root
 ```
+
+> [BACK](../README.md) 😮 [TOP](#path-rules)

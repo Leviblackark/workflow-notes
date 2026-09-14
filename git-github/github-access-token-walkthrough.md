@@ -1,4 +1,6 @@
-GitHub Personal Access Token
+> [BACK](../README.md)
+
+## GitHub Personal Access Token
 
 A **Personal Access Token (PAT)** is a credential that can be used to authenticate Git with GitHub.
 
@@ -318,3 +320,7 @@ Adding a local repository to GitHub using Git
 Managing remote repos
 
 > https://docs.github.com/en/get-started/git-basics/managing-remote-repositories
+
+---
+
+> [BACK](../README.md) 😮 [TOP](#github-personal-access-token)

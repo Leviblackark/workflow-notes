@@ -1,3 +1,5 @@
+> [BACK](../README.md)
+
 # Markdown Tables
 
 Markdown tables are useful for displaying information in a structured way using **rows and columns**.
@@ -283,3 +285,5 @@ Copy this when starting a new table:
 - Use inline code for commands, filenames, or syntax.
 - Use tables when they make information easier to scan.
 - If a table starts becoming difficult to read, consider using headings and bullet points instead.
+
+> [BACK](../README.md) 😮 [TOP](#markdown-tables)

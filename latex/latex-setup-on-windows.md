@@ -1,3 +1,5 @@
+> [BACK](../README.md)
+
 # LaTeX Setup Guide — Windows + VS Code
 
 This guide documents the full LaTeX setup used on Windows with VS Code, including the programs installed, why they are needed, how they work together, and how the project files were organised.
@@ -1112,3 +1114,5 @@ build/
 ```
 
 Once this setup is complete, normal LaTeX work should require very little tooling management.
+
+> [BACK](../README.md) 😮 [TOP](#latex-setup-guide--windows--vs-code)

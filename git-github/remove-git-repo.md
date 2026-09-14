@@ -1,3 +1,5 @@
+> [BACK](../README.md)
+
 #### In Git Bash
 
 First make sure you're inside the correct folder:
@@ -54,3 +56,6 @@ rm   = remove
 -f   = force
        don't ask for confirmation / ignore some prompts
 ```
+
+---
+> [BACK](../README.md) 😮 [TOP](#in-git-bash)

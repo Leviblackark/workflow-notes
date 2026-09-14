@@ -1,3 +1,5 @@
+> [BACK](../README.md)
+
 #### If its kernel was registered, deleting .venv does not automatically unregister the kernel
 
 Suppose you previously did:
@@ -112,3 +114,7 @@ Unregister old .venv kernel
       ↓
 Delete old .venv
 ```
+
+---
+
+> [BACK](../README.md) 😮 [TOP](#if-its-kernel-was-registered-deleting-venv-does-not-automatically-unregister-the-kernel)

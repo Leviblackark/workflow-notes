@@ -1,3 +1,5 @@
+> [BACK](../README.md)
+
 # VSCODE SETUP NOTES
 
 #### Basic viewing shortcuts
@@ -55,3 +57,7 @@ A = Added
 D = Deleted
     Tracked file has been deleted
 ```
+
+---
+
+> [BACK](../README.md) 😮 [TOP](#vscode-setup-notes)

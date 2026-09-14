@@ -1,3 +1,5 @@
+> [BACK](../README.md)
+
 # Mermaid Diagrams in Markdown
 
 Mermaid allows you to create **flowcharts and diagrams using text** inside Markdown files.
@@ -288,3 +290,7 @@ git push
 ```
 
 > The diagram shows the overall process, while the commands show how you would carry it out in Git.
+
+---
+
+> [BACK](../README.md) 😮 [TOP](#mermaid-diagrams-in-markdown)

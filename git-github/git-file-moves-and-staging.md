@@ -1,3 +1,5 @@
+> [BACK](../README.md)
+
 # Moving Files in a Git Repository
 
 When working inside a Git repository, files can be moved in several ways:
@@ -642,3 +644,7 @@ their paths
 So when a directory is renamed, Git is really recording the new paths of the files inside it.
 
 Empty directories are not normally tracked by Git.
+
+---
+
+> [BACK](../README.md) 😮 [TOP](#moving-files-in-a-git-repository)

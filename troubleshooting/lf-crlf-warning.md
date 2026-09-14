@@ -1,3 +1,5 @@
+> [BACK](../README.md)
+
 ### I ran in to a issue when running `git add .`
 
 ![warning after git add . is used](../assets/images/lf-crlf-warning/warning-replace-LF-by-CRLF.jpg)
@@ -1089,3 +1091,7 @@ git check-attr text eol -- README.md
 git config --show-origin --get core.autocrlf
 git config --show-origin --get core.safecrlf
 ```
+
+---
+
+> [BACK](../README.md) 😮 [TOP](#i-ran-in-to-a-issue-when-running-git-add-)

@@ -1,3 +1,5 @@
+> [BACK](../README.md)
+
 # Markdown Links
 
 Markdown links allow you to make text clickable.
@@ -480,3 +482,7 @@ It is usually clearer to write:
 Relative links are usually the best choice when connecting files inside the same Git repository.
 
 After moving or renaming a file, check any Markdown links pointing to it because the path may also need updating.
+
+---
+
+> [BACK](../README.md) 😮 [TOP](#markdown-links)

@@ -1,3 +1,5 @@
+> [BACK](../README.md)
+
 ### lean library add
 ##### Packages Already Included With LEAN
 
@@ -709,3 +711,7 @@ Then select something like:
 
 Things to look into: 
 1. If changing the isolated environment affects the current autocomplete. Is it using Global in which case this works and if not then boom I guess. 
+
+---
+
+> [BACK](../README.md) 😮 [TOP](#lean-library-add)
